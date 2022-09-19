@@ -1,5 +1,5 @@
 #!/bin/sh
-##setup command=wget -O  /var/volatile/tmp/ipaudio8.9.tar.gz https://github.com/popking159/down/raw/master/ipaudio8.9.tar.gz
+##setup command=wget https://github.com/popking159/down/raw/master/shawkyradio.sh -O - | /bin/sh
 
 echo ""
 
