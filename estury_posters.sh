@@ -1,5 +1,5 @@
 #!/bin/sh
-##setup command=wget -O  /var/volatile/tmp/EstuaryV2XPoster3P.tar.gz https://github.com/popking159/down/raw/master/EstuaryV2XPoster3P.tar.gz
+##setup command=https://github.com/popking159/down/raw/master/estury_posters.sh
 
 echo ""
 
