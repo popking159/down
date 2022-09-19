@@ -1,5 +1,5 @@
 #!/bin/sh
-##setup command=https://github.com/popking159/down/raw/master/estury_posters.sh
+##setup command=wget https://github.com/popking159/down/raw/master/estury_posters.sh -O - | /bin/sh
 
 echo ""
 
