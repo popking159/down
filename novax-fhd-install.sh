@@ -1,5 +1,5 @@
 #!/bin/sh
-##setup command=wget -q "--no-check-certificate" https://github.com/popking159/down/raw/master/estury_posters.sh -O - | /bin/sh
+##setup command=wget -q "--no-check-certificate" https://github.com/popking159/down/raw/master/novax-fhd-install.sh -O - | /bin/sh
 
 echo ""
 
