@@ -1,0 +1,86 @@
+{
+    "playlist": [
+	      {
+        "url": "http://edge06.mixlr.com:443/livets/production/600b9c15fbb3db90387a8e0516fe3eb0/chunklist_w1610789073.m3u8", 
+        "channel": "WC QATAR"
+        },{
+        "url": "http://78.129.185.84:26831/stream/1/", 
+        "channel": "Anis FM 1"
+        },{
+        "url": "http://78.129.185.84:26831/stream/2/", 
+        "channel": "Anis FM 2"
+        },{
+        "channel": "Alkas 1",
+        "url": "http://rs.hadara.ps:8000/;stream.mp3?play3"
+		},{
+        "url": "http://cp12.serverse.com:7057/live", 
+        "channel": "راديو الدلتا"
+        },{
+        "url": "http://streamer.mada.ps:8008/ajyal", 
+        "channel": "راديو أجيال"
+        },{
+        "channel": "Radio Bander Aden FM",
+        "url": "http://r.fm-radio.net/bndr"
+        },{
+        "channel": "beIN MAX 1 HD",
+        "url": "http://88.99.210.108:8080/thaermo/64646464/56114?token=GkBZB0VYEghGB1dZB1lWUwdVVQRUAVdQVFBUAFNaBwBQAVAHBQVVU1dDGRpETBFSBV08XQEWDwJUBwBVSBpDEAQQbg9SEgoQV0MZGkNRDlJGClICVAQCBlUDBVdIGkYKBUALCENcXB5GBE1MUkoNVghvB1ETXVZWQAhZFAhUGkEODG4CU11RXABDDxoGGk8VDUMTFl9aQF8OHhUDDUxEAhUHE1xYRVxeSENWV0JWF0UdElkWN3sXH0BXTxUBVkUKDgwTXBREQxBIQ1xLaEoGRBBCBlUIUUcRWBAGQ0gaWwIZPVIJWF5VURAIWlZEGlkVVwBTBEcYF14NXF4VC0ppEwgGE1xYRVxeGQ=="
+        },{
+        "channel": "beIN MAX 2 HD",
+        "url": "http://88.99.210.108:8080/thaermo/64646464/56115?token=GkBZB0VYEghGB1dZB1lWUwdVVQRUAVdQVFBUAFNaBwBQAVAHBQVVU1dDGRpETBFSBV08XQEWDwJUBwBVSBpDEAQQbg9SEgoQV0MZGkNRDlJGClICVAQCBlUDBVdIGkYKBUALCENcXB5GBE1MUkoNVghvB1ETXVZWQAhZFAhUGkEODG4CU11RXABDDxoGGk8VDUMTFl9aQF8OHhUDDUxEAhUHE1xYRVxeSENWV0JWF0UdElkWN3sXH0BXTxUBVkUKDgwTXBREQxBIQ1xLaEoGRBBCBlUIUUcRWBAGQ0gaWwIZPVIJWF5VURAIWlZEGlkVVwBTBEcYF14NXF4VC0ppEwgGE1xYRVxeGQ=="
+        },{
+        "channel":"beIN Sports Prem 1 MNASR",
+        "url":"http://62.138.18.19:11001/live/beinp1.ts?uid=mnasr1"                  
+        },{
+        "channel":"beIN Sports Prem 2 MNASR",
+        "url":"http://62.138.18.19:11001/live/beinp2.ts?uid=mnasr2"
+        },{
+        "channel":"beIN Sports Prem 3 MNASR",
+        "url":"http://62.138.18.19:11001/live/beinp3.ts?uid=mnasr3"
+        },{
+        "channel":"beIN Sports 1 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein1.ts?uid=mnasr4"
+        },{
+        "channel":"beIN Sports 2 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein2.ts?uid=mnasr5"
+        },{
+        "channel":"beIN Sports 3 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein3.ts?uid=mnasr6"
+        },{
+        "channel":"beIN Sports 4 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein4.ts?uid=mnasr7"
+        },{
+        "channel":"beIN Sports 5 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein5.ts?uid=mnasr8"
+        },{
+        "channel":"beIN Sports 6 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein6.ts?uid=mnasr9"
+        },{
+        "channel":"beIN Sports 7 MNASR",
+        "url":"http://62.138.18.19:11001/live/bein7.ts?uid=mnasr10"
+        },{
+         "url": "https://stream.radiojar.com/8s5u5tpdtwzuv", 
+        "channel": "اذاعة القرأن الكريم القاهرة"
+        },{
+        "url": "https://streamer.mada.ps:8204/quranfm", 
+        "channel": "قران كريم"
+        },{
+        "url": "https://server03.quran.com.kw:10998/;*.mp3", 
+        "channel": "اذاعة الشيخ مشارى العفاسى"
+        },{
+        "url": "http://78.129.185.84:26831/stream/1/", 
+        "channel": "راديو أنيس"
+        },{
+        "url": "http://edge06.mixlr.com:443/livets/production/600b9c15fbb3db90387a8e0516fe3eb0/chunklist_w1610789073.m3u8", 
+        "channel": "راديو أشرف 2"
+        },{
+        "url": "http://edge05.mixlr.com:443/livets/production/03a0ae04e212eea308a5a4ed5aac93b6/chunklist_w346035288.m3u8", 
+        "channel": "راديو أشرف 3"
+        },{
+        "url": "https://streamer.mada.ps:8207/ANGHAM", 
+        "channel": "راديو انغام"
+        },{
+        "url": "https://audio.nrpstream.com/listen/nogoumfm/radio.mp3", 
+        "channel": "اذاعة نجوم اف ام"
+        }  
+        ]
+}
