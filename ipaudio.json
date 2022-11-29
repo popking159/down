@@ -1,9 +1,6 @@
 {
     "playlist": [
 	      {
-        "url": "http://edge06.mixlr.com:443/livets/production/600b9c15fbb3db90387a8e0516fe3eb0/chunklist_w1610789073.m3u8", 
-        "channel": "WC QATAR"
-        },{
         "url": "http://78.129.185.84:26831/stream/1/", 
         "channel": "Anis FM 1"
         },{
