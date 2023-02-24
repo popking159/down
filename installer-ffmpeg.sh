@@ -10,9 +10,7 @@ PLUGINPATH='/usr/lib/enigma2/python/Plugins/Extensions/IPAudio'
 
 CHECK='/tmp/check'
 BINDIR='/usr/bin/'
-ARMBIN='/tmp/ipaudio/bin/arm/gst1.0-ipaudio'
 FFPPLAYERA='/tmp/ipaudio/bin/arm/ff4/ff-ipaudio'
-MIPSBIN='/tmp/ipaudio/bin/mips/gst1.0-ipaudio'
 FFPPLAYERM='/tmp/ipaudio/bin/mips/ff4/ff-ipaudio'
 IPAUDIO='/tmp/ipaudio/usr/*'
 PLAYLIST='/tmp/ipaudio/etc/ipaudio.json'
@@ -136,12 +134,10 @@ cd ..
 
 if grep -qs -i 'mips' cat $CHECK; then
         echo "[ Your device is MIPS ]"
-        cp -a $MIPSBIN $BINDIR
         cp -a $FFPPLAYERM $BINDIR
         chmod 0775 /usr/bin/ff-ipaudio
 elif grep -qs -i 'armv7l' cat $CHECK; then
         echo "[ Your device is armv7l ]"
-        cp -a $ARMBIN $BINDIR
         cp -a $FFPPLAYERA $BINDIR
         chmod 0775 /usr/bin/ff-ipaudio
 else
