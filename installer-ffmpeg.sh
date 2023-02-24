@@ -17,12 +17,9 @@ PLAYLIST='/tmp/ipaudio/etc/ipaudio.json'
 ASOUND='/tmp/ipaudio/etc/asound.conf'
 
 uname -m >$CHECK
+killall -9 ff-ipaudio
+rm -r /usr/bin/ff-ipaudio >/dev/null 2>&1
 
-ps_out=$(ps -ef | grep ff-ipaudio | grep -v 'grep' | grep -v $0)
-result=$(echo $ps_out | grep "ff-ipaudio")
-if [[ "$result" != "" ]]; then
-        killall -9 ff-ipaudio
-fi
 
 # check depends packges
 if [ -f /var/lib/dpkg/status ]; then
