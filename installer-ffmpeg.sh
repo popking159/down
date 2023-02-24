@@ -184,7 +184,7 @@ rm -f /usr/bin/ff-ipaudio >/dev/null 2>&1
 
 cd $TEMPATH
 set -e
-wget -q "http://ipkinstall.ath.cx/ipk-install/ipaudio-linuxsat/ipaudio-$version-ffmpeg.tar.gz"
+wget -q "https://raw.githubusercontent.com/popking159/down/master/ipaudio-$version-ffmpeg.tar.gz"
 
 tar -xzf ipaudio-"$version"-ffmpeg.tar.gz -C /tmp
 set +e
