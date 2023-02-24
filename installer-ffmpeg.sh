@@ -1,7 +1,7 @@
 #!/bin/sh
-#wget -q "--no-check-certificate" http://ipkinstall.ath.cx/ipk-install/ipaudio-linuxsat/installer-ffmpeg.sh -O - | /bin/sh
+##wget https://raw.githubusercontent.com/popking159/down/master/installer-ffmpeg.sh -qO - | /bin/sh
 ######### Only These two lines to edit with new version ######
-version=7.4
+version=7.7
 description="Some bug fixes"
 #############################################################
 
@@ -232,8 +232,9 @@ echo ""
 sync
 echo "#########################################################"
 echo "#          IPAudio $version INSTALLED SUCCESSFULLY      #"
-echo "#                BY ZIKO - support on                   #"
+echo "#                          BY ZIKO                      #"
 echo "#   https://www.tunisia-sat.com/forums/threads/4171372  #"
+echo "#            I hope support will be back soon           #"
 echo "#########################################################"
 echo "#           your Device will RESTART Now                #"
 echo "#########################################################"
