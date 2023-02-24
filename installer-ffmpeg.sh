@@ -20,13 +20,6 @@ ASOUND='/tmp/ipaudio/etc/asound.conf'
 
 uname -m >$CHECK
 
-# kill player if in use
-ps_out=$(ps -ef | grep gst1.0-ipaudio | grep -v 'grep' | grep -v $0)
-result=$(echo $ps_out | grep "gst1.0-ipaudio")
-if [[ "$result" != "" ]]; then
-        killall -9 gst1.0-ipaudio
-fi
-
 ps_out=$(ps -ef | grep ff-ipaudio | grep -v 'grep' | grep -v $0)
 result=$(echo $ps_out | grep "ff-ipaudio")
 if [[ "$result" != "" ]]; then
@@ -42,22 +35,6 @@ else
         OS='Opensource'
 fi
 
-if grep -q 'gstreamer1.0-plugins-base-volume' $STATUS; then
-        gstVol='Installed'
-fi
-
-if grep -q 'gstreamer1.0-plugins-good-ossaudio' $STATUS; then
-        gstOss='Installed'
-fi
-
-if grep -q 'gstreamer1.0-plugins-good-mpg123' $STATUS; then
-        gstMp3='Installed'
-fi
-
-if grep -q 'gstreamer1.0-plugins-good-equalizer' $STATUS; then
-        equalizer='Installed'
-fi
-
 if grep -q 'ffmpeg' $STATUS; then
         ffmpeg='Installed'
 fi
@@ -66,7 +43,7 @@ if grep -q 'alsa-plugins' $STATUS; then
         alsaPlug='Installed'
 fi
 
-if [ "$gstVol" = "Installed" ] && [ "$gstOss" = "Installed" ] && [ "$gstMp3" = "Installed" ] && [ "$equalizer" = "Installed" ] && [ "$ffmpeg" = "Installed" ] && [ "$alsaPlug" = "Installed" ]; then
+if [ "$ffmpeg" = "Installed" ] && [ "$alsaPlug" = "Installed" ]; then
         echo ""
 else
         if [ $OS = "DreamOS" ]; then
@@ -74,19 +51,8 @@ else
                 echo "Some Depends Need to Be downloaded From Feeds ...."
                 echo "=========================================================================="
                 echo "apt update ..."
-                echo "========================================================================"
+                echo "=========================================================================="
                 apt-get update
-                echo " Downloading gstreamer1.0-plugins-base-volume ......"
-                apt-get install gstreamer1.0-plugins-base-volume -y
-                echo "========================================================================"
-                echo " Downloading gstreamer1.0-plugins-good-ossaudio ......"
-                apt-get install gstreamer1.0-plugins-good-ossaudio -y
-                echo "========================================================================"
-                echo " Downloading gstreamer1.0-plugins-good-mpg123 ......"
-                apt-get install gstreamer1.0-plugins-good-mpg123 -y
-                echo "========================================================================"
-                echo " Downloading gstreamer1.0-plugins-good-equalizer ......"
-                apt-get install gstreamer1.0-plugins-good-equalizer -y
                 echo "========================================================================"
                 echo " Downloading ffmpeg ......"
                 apt-get install ffmpeg -y
@@ -101,17 +67,6 @@ else
                 echo "Opkg Update ..."
                 echo "========================================================================"
                 opkg update
-                echo " Downloading gstreamer1.0-plugins-base-volume ......"
-                opkg install gstreamer1.0-plugins-base-volume
-                echo "========================================================================"
-                echo " Downloading gstreamer1.0-plugins-good-ossaudio ......"
-                opkg install gstreamer1.0-plugins-good-ossaudio
-                echo "========================================================================"
-                echo " Downloading gstreamer1.0-plugins-good-mpg123 ......"
-                opkg install gstreamer1.0-plugins-good-mpg123
-                echo "========================================================================"
-                echo " Downloading gstreamer1.0-plugins-good-equalizer ......"
-                opkg install gstreamer1.0-plugins-good-equalizer
                 echo "========================================================================"
                 echo " Downloading ffmpeg ......"
                 opkg install ffmpeg
@@ -122,17 +77,6 @@ else
         fi
 fi
 
-if grep -q 'gstreamer1.0-plugins-base-volume' $STATUS; then
-        echo ""
-else
-        echo "#########################################################"
-        echo "#  gstreamer1.0-plugins-base-volume Not found in feed   #"
-        echo "#         IPaudio has not been installed                #"
-        echo "#########################################################"
-        rm -r /tmp/ipaudio >/dev/null 2>&1
-        rm -f $CHECK >/dev/null 2>&1
-        exit 1
-fi
 
 if grep -q 'alsa-plugins' $STATUS; then
         echo ""
@@ -179,7 +123,6 @@ fi
 
 # remove old version
 rm -rf $PLUGINPATH >/dev/null 2>&1
-rm -f /usr/bin/gst1.0-ipaudio >/dev/null 2>&1
 rm -f /usr/bin/ff-ipaudio >/dev/null 2>&1
 
 cd $TEMPATH
@@ -195,13 +138,11 @@ if grep -qs -i 'mips' cat $CHECK; then
         echo "[ Your device is MIPS ]"
         cp -a $MIPSBIN $BINDIR
         cp -a $FFPPLAYERM $BINDIR
-        chmod 0775 /usr/bin/gst1.0-ipaudio
         chmod 0775 /usr/bin/ff-ipaudio
 elif grep -qs -i 'armv7l' cat $CHECK; then
         echo "[ Your device is armv7l ]"
         cp -a $ARMBIN $BINDIR
         cp -a $FFPPLAYERA $BINDIR
-        chmod 0775 /usr/bin/gst1.0-ipaudio
         chmod 0775 /usr/bin/ff-ipaudio
 else
         echo "###############################"
@@ -243,5 +184,4 @@ if [ $OS = 'DreamOS' ]; then
 else
         killall -9 enigma2
 fi
-exit 0
 exit 0
