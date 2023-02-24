@@ -238,9 +238,10 @@ echo "#            I hope support will be back soon           #"
 echo "#########################################################"
 echo "#           your Device will RESTART Now                #"
 echo "#########################################################"
-# if [ $OS = 'DreamOS' ]; then
-#         systemctl restart enigma2
-# else
-#         killall -9 enigma2
+if [ $OS = 'DreamOS' ]; then
+        systemctl restart enigma2
+else
+        killall -9 enigma2
 fi
+exit 0
 exit 0
